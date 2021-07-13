@@ -1,6 +1,7 @@
 # Campus Vaccination Management System
 """ 
 Fields :- ['USN', 'Name', 'Age', 'Phone', 'Vaccine_Dose']
+Fields :- ['FID', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
 1. Add Vaccinated Student/Faculty Details
 2. View Vaccinated Students/Faculty Details
 3. Update Vaccinated Student/Faculty Details
@@ -127,7 +128,7 @@ def add_cse_1year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_cse_2year_student():
@@ -144,7 +145,7 @@ def add_cse_2year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_cse_3year_student():
@@ -161,7 +162,7 @@ def add_cse_3year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_cse_4year_student():
@@ -178,7 +179,7 @@ def add_cse_4year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 # ISE Student Add Functions
@@ -196,7 +197,7 @@ def add_ise_1year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_ise_2year_student():
@@ -213,7 +214,7 @@ def add_ise_2year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_ise_3year_student():
@@ -230,7 +231,7 @@ def add_ise_3year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_ise_4year_student():
@@ -247,7 +248,7 @@ def add_ise_4year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 # EC Student Add Functions
@@ -265,7 +266,7 @@ def add_ec_1year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_ec_2year_student():
@@ -282,7 +283,7 @@ def add_ec_2year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_ec_3year_student():
@@ -299,7 +300,7 @@ def add_ec_3year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_ec_4year_student():
@@ -316,7 +317,7 @@ def add_ec_4year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 # CIVIL Student Add Functions
@@ -334,7 +335,7 @@ def add_civil_1year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_civil_2year_student():
@@ -351,7 +352,7 @@ def add_civil_2year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_civil_3year_student():
@@ -368,7 +369,7 @@ def add_civil_3year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_civil_4year_student():
@@ -385,7 +386,7 @@ def add_civil_4year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 # MECH Student Add Functions
@@ -403,7 +404,7 @@ def add_mech_1year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_mech_2year_student():
@@ -420,7 +421,7 @@ def add_mech_2year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_mech_3year_student():
@@ -437,7 +438,7 @@ def add_mech_3year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
 
 def add_mech_4year_student():
@@ -454,5 +455,96 @@ def add_mech_4year_student():
         writer=csv.writer(f)
         writer.writerows([student_data])
     print("Data Added Successfuly!")
-    input("Press Any Key to Continue")
+    input("Press Any Key To Continue")
     return
+
+# CSE Faculty Add Function
+def add_cse_faculty():
+    print("---------------------------------------")
+    print("Add Faculty Information")
+    print("---------------------------------------")
+    global faculty_fields
+    global cse_faculty_database
+    faculty_data=[]
+    for field in faculty_fields:
+        value=input("Enter"+field+":")
+        faculty_data.append(value)
+    with open(cse_faculty_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([faculty_data])
+    print("Data Added Successfully!")
+    input("Press Any Key To Continue")
+    return
+
+# ISE Faculty Add Function
+def add_ise_faculty():
+    print("---------------------------------------")
+    print("Add Faculty Information")
+    print("---------------------------------------")
+    global faculty_fields
+    global ise_faculty_database
+    faculty_data=[]
+    for field in faculty_fields:
+        value=input("Enter"+field+":")
+        faculty_data.append(value)
+    with open(ise_faculty_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([faculty_data])
+    print("Data Added Successfully!")
+    input("Press Any Key To Continue")
+    return
+
+# EC Faculty Add Function
+def add_ec_faculty():
+    print("---------------------------------------")
+    print("Add Faculty Information")
+    print("---------------------------------------")
+    global faculty_fields
+    global ec_faculty_database
+    faculty_data=[]
+    for field in faculty_fields:
+        value=input("Enter"+field+":")
+        faculty_data.append(value)
+    with open(ec_faculty_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([faculty_data])
+    print("Data Added Successfully!")
+    input("Press Any Key To Continue")
+    return
+
+# CIVIL Faculty Add Function
+def add_civil_faculty():
+    print("---------------------------------------")
+    print("Add Faculty Information")
+    print("---------------------------------------")
+    global faculty_fields
+    global civil_faculty_database
+    faculty_data=[]
+    for field in faculty_fields:
+        value=input("Enter"+field+":")
+        faculty_data.append(value)
+    with open(civil_faculty_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([faculty_data])
+    print("Data Added Successfully!")
+    input("Press Any Key To Continue")
+    return
+
+# MECH Faculty Add Function
+def add_mech_faculty():
+    print("---------------------------------------")
+    print("Add Faculty Information")
+    print("---------------------------------------")
+    global faculty_fields
+    global mech_faculty_database
+    faculty_data=[]
+    for field in faculty_fields:
+        value=input("Enter"+field+":")
+        faculty_data.append(value)
+    with open(mech_faculty_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([faculty_data])
+    print("Data Added Successfully!")
+    input("Press Any Key To Continue")
+    return
+    
