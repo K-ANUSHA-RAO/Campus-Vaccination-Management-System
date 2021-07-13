@@ -11,3 +11,12 @@ A file contains the details of all lectures based on the branch.
 The vaccinated faculty details are added to a file. This file can be updated for faculty on receiving second dose. 
 The details of faculty who are not vaccinated is generated automatically. 
 The details of faculties who are vaccinated and not vaccinated can be viewed.
+ 
+## Tasks 
+- [] Create CSV Files for Student Database.
+- [] Create CSV Files for Faculty Database.
+- [] Create Add Vacinated Student Details Function In Code.py
+- [] Create View Vaccinated Student Details Function In Code.py
+- [] Create Update Vaccinated Student Details Function In Code.py
+- [] Create A Function To Generate Non Vaccinated Students File By Compairing Student Database File And Vaccinated Students File.
+- [] Ensure All Display Functions Work Perfectly.
