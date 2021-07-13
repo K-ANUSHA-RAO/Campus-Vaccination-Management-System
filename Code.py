@@ -319,4 +319,140 @@ def add_ec_4year_student():
     input("Press Any Key to Continue")
     return
 
-    
+# CIVIL Student Add Functions
+def add_civil_1year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global civil_first_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(civil_first_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_civil_2year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global civil_second_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(civil_second_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_civil_3year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global civil_third_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(civil_third_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_civil_4year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global civil_fourth_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(civil_fourth_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+# MECH Student Add Functions
+def add_mech_1year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global mech_first_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(mech_first_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_mech_2year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global mech_second_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(mech_second_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_mech_3year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global ec_third_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(mech_third_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_mech_4year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global mech_fourth_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(mech_fourth_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
