@@ -318,3 +318,5 @@ def add_ec_4year_student():
     print("Data Added Successfuly!")
     input("Press Any Key to Continue")
     return
+
+    
