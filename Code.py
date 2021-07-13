@@ -11,17 +11,8 @@ Fields :- ['USN', 'Name', 'Age', 'Phone', 'Vaccine_Dose']
 
 import csv
 # Define global variables
-cse_student_fields = ['USN', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
-ise_student_fields = ['USN', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
-ec_student_fields = ['USN', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
-civil_student_fields = ['USN', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
-mech_student_fields = ['USN', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
-
-cse_faculty_fields = ['FID', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
-ise_faculty_fields = ['FID', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
-ec_faculty_fields = ['FID', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
-civil_faculty_fields = ['FID', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
-mech_faculty_fields = ['FID', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
+student_fields = ['USN', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
+faculty_fields = ['FID', 'Name', 'Age',  'Phone', 'Vaccine_Dose']
 
 cse_first_year_student_database = 'cse_first_year_students.csv'
 cse_second_year_student_database = 'cse_second_year_students.csv'
@@ -54,6 +45,7 @@ ec_faculty_database = 'ec_faculty.csv'
 civil_faculty_database = 'civil_faculty.csv'
 mech_faculty_database = 'mech_faculty.csv'
 
+# Display Functions
 def display_menu():
     print("-----------------------------------------")
     print(" Campus Vaccination Management System")
@@ -61,6 +53,7 @@ def display_menu():
     print("1. Student")
     print("2. Faculty")
 
+# Student Display Functions
 def display1_students_menu():
     print("--------------------------------------")
     print(" Select Branch")
@@ -73,7 +66,7 @@ def display1_students_menu():
     print("6. Back To Previous Window")
     print("7. Quit")
 
-def display2_stdents_menu():
+def display2_students_menu():
     print("--------------------------------------")
     print("Select Year Of Study ")
     print("--------------------------------------")
@@ -95,6 +88,7 @@ def display3_students_menu():
     print("5. Back To Previous Window")
     print("6. Quit")
 
+# Faculty Display Functions
 def display1_faculty_menu():
     print("--------------------------------------")
     print(" Select Branch")
@@ -117,3 +111,210 @@ def display2_faculty_menu():
     print("4. Generate Non Vaccinated Faculty File")
     print("5. Back To Previous Window")
     print("6. Quit")
+
+# CSE Student Add Functions
+def add_cse_1year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global cse_first_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(cse_first_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_cse_2year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global cse_second_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(cse_second_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_cse_3year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global cse_third_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(cse_third_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_cse_4year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global cse_fourth_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(cse_fourth_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+# ISE Student Add Functions
+def add_ise_1year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global ise_first_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(ise_first_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_ise_2year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global ise_second_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(ise_second_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_ise_3year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global ise_third_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(ise_third_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_ise_4year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global ise_fourth_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(ise_fourth_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+# EC Student Add Functions
+def add_ec_1year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global ec_first_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(ec_first_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_ec_2year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global ec_second_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(ec_second_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_ec_3year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global ec_third_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(ec_third_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
+
+def add_ec_4year_student():
+    print("---------------------------------------")
+    print("Add Student Information")
+    print("---------------------------------------")
+    global student_fields
+    global ec_fourth_year_student_database
+    student_data=[]
+    for field in student_fields:
+        value=input("Enter"+field+":")
+        student_data.append(value)
+    with open(ec_fourth_year_student_database,"a",encoding="utf-8") as f:
+        writer=csv.writer(f)
+        writer.writerows([student_data])
+    print("Data Added Successfuly!")
+    input("Press Any Key to Continue")
+    return
