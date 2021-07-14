@@ -1124,4 +1124,566 @@ def update_cse_4year_student():
         print("USN Not Found In The Database.")
     input("Press Any Key To Continue.")
 
+# ISE Student Update Functions
+def update_ise_1year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global ise_first_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(ise_first_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(ise_first_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
 
+def update_ise_2year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global ise_second_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(ise_second_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(ise_second_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+def update_ise_3year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global ise_third_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(ise_third_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(ise_third_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+def update_ise_4year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global ise_fourth_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(ise_fourth_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(ise_fourth_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+# EC Student Update Functions
+def update_ec_1year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global ec_first_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(ec_first_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(ec_first_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+def update_ec_2year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global ec_second_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(ec_second_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(ec_second_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+def update_ec_3year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global ec_third_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(ec_third_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(ec_third_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+def update_ec_4year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global ec_fourth_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(ec_fourth_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(ec_fourth_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+# CIVIL Student Update Functions
+def update_civil_1year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global civil_first_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(civil_first_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(civil_first_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+def update_civil_2year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global civil_second_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(civil_second_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(civil_second_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+def update_civil_3year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global civil_third_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(civil_third_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(civil_third_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+def update_civil_4year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global civil_fourth_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(civil_fourth_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(civil_fourth_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+# MECH Student Update Functions
+def update_mech_1year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global mech_first_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(mech_first_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(mech_first_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+def update_mech_2year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global mech_second_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(mech_second_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(mech_second_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+def update_mech_3year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global mech_third_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(mech_third_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(mech_third_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+def update_mech_4year_student():
+    print("------------------")
+    print("Update Student")
+    print("------------------")
+    global student_fields
+    global mech_fourth_year_student_database
+    USN=input("Enter USN To Update: ")
+    index_student=None
+    updated_data=[]
+    with open(mech_fourth_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if USN==row[0] :
+                    index_student=counter
+                    print("Student Found: At Index ",index_student)
+                    student_data=[]
+                    for field in student_fields:
+                        value=input("Enter "+field+": ")
+                        student_data.append(value)
+                    updated_data.append(student_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_student is not None:
+        with open(mech_fourth_year_student_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("USN Not Found In The Database.")
+    input("Press Any Key To Continue.")
