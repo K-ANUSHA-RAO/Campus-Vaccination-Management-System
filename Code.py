@@ -547,4 +547,348 @@ def add_mech_faculty():
     print("Data Added Successfully!")
     input("Press Any Key To Continue")
     return
-    
+
+# CSE Students View Function
+def view_cse_1year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global cse_first_year_student_database
+    with open(cse_first_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_cse_2year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global cse_second_year_student_database
+    with open(cse_second_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_cse_3year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global cse_third_year_student_database
+    with open(cse_third_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_cse_4year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global cse_fourth_year_student_database
+    with open(cse_fourth_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+# ISE Students View Function
+def view_ise_1year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global ise_first_year_student_database
+    with open(ise_first_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_ise_2year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global ise_second_year_student_database
+    with open(ise_second_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_ise_3year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global ise_third_year_student_database
+    with open(ise_third_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_ise_4year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global ise_fourth_year_student_database
+    with open(ise_fourth_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+# EC Students View Function
+def view_ec_1year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global ec_first_year_student_database
+    with open(ec_first_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_ec_2year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global ec_second_year_student_database
+    with open(ec_second_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_ec_3year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global ec_third_year_student_database
+    with open(ec_third_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_ec_4year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global ec_fourth_year_student_database
+    with open(ec_fourth_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+# CIVIL Students View Function
+def view_civil_1year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global civil_first_year_student_database
+    with open(civil_first_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_civil_2year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global civil_second_year_student_database
+    with open(civil_second_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_civil_3year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global civil_third_year_student_database
+    with open(civil_third_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_civil_4year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global civil_fourth_year_student_database
+    with open(civil_fourth_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+# MECH Students View Function
+def view_mech_1year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global mech_first_year_student_database
+    with open(mech_first_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_mech_2year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global mech_second_year_student_database
+    with open(mech_second_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_mech_3year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global mech_third_year_student_database
+    with open(mech_third_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+def view_mech_4year_student():
+    print("------------------")
+    print("Student Records")
+    print("------------------")
+    global student_fields
+    global mech_fourth_year_student_database
+    with open(mech_fourth_year_student_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in student_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
