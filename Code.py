@@ -892,3 +892,93 @@ def view_mech_4year_student():
                 print(item, end="\t |")
             print("\n")
     input("Press Any Key To Continue")
+
+# CSE Faculty View functions
+def view_cse_faculty():
+    print("------------------")
+    print("Faculty Records")
+    print("------------------")
+    global faculty_fields
+    global cse_faculty_database
+    with open(cse_faculty_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in faculty_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+# ISE Faculty View functions
+def view_ise_faculty():
+    print("------------------")
+    print("Faculty Records")
+    print("------------------")
+    global faculty_fields
+    global ise_faculty_database
+    with open(ise_faculty_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in faculty_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")
+
+# EC Faculty View functions
+def view_ec_faculty():
+    print("------------------")
+    print("Faculty Records")
+    print("------------------")
+    global faculty_fields
+    global ec_faculty_database
+    with open(ec_faculty_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in faculty_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")       
+
+# CIVIL Faculty View functions
+def view_civil_faculty():
+    print("------------------")
+    print("Faculty Records")
+    print("------------------")
+    global faculty_fields
+    global civil_faculty_database
+    with open(civil_faculty_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in faculty_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue") 
+
+# MECH Faculty View functions
+def view_mech_faculty():
+    print("------------------")
+    print("Faculty Records")
+    print("------------------")
+    global faculty_fields
+    global mech_faculty_database
+    with open(mech_faculty_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        for x in faculty_fields:
+            print(x, end='\t |')
+        print("\n-----------------------------------------------------------------")
+        for row in reader:
+            for item in row:
+                print(item, end="\t |")
+            print("\n")
+    input("Press Any Key To Continue")    
