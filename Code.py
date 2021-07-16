@@ -1687,4 +1687,5 @@ def update_mech_4year_student():
     else:
         print("USN Not Found In The Database.")
     input("Press Any Key To Continue.")
-    
+
+# Generate Function For CSE Students
