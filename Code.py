@@ -15,36 +15,36 @@ import csv
 student_fields = ['USN', 'Name', 'Age', 'Phone', 'Vaccine_Dose']
 faculty_fields = ['FID', 'Name', 'Age', 'Phone', 'Vaccine_Dose']
 
-cse_first_year_vaccinated_student_database = 'cse_first_year_vaccinated_students.csv'
-cse_second_year_vaccinated_student_database = 'cse_second_year_vaccinated_students.csv'
-cse_third_year_vaccinated_student_database = 'cse_third_year_vaccinated_students.csv'
-cse_fourth_year_vaccinated_student_database = 'cse_fourth_year_vaccinated_students.csv'
+cse_first_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\CSE\STUDENTS\cse_first_year_vaccinated_students.csv'
+cse_second_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\CSE\STUDENTS\cse_second_year_vaccinated_students.csv'
+cse_third_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\CSE\STUDENTS\cse_third_year_vaccinated_students.csv'
+cse_fourth_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\CSE\STUDENTS\cse_fourth_year_vaccinated_students.csv'
 
-ise_first_year_vaccinated_student_database = 'ise_first_year_vaccinated_students.csv'
-ise_second_year_vaccinated_student_database = 'ise_second_year_vaccinated_students.csv'
-ise_third_year_vaccinated_student_database = 'ise_third_year_vaccinated_students.csv'
-ise_fourth_year_vaccinated_student_database = 'ise_fourth_year_vaccinated_students.csv'
+ise_first_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\ISE\STUDENTS\ise_first_year_vaccinated_students.csv'
+ise_second_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\ISE\STUDENTS\ise_second_year_vaccinated_students.csv'
+ise_third_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\ISE\STUDENTS\ise_third_year_vaccinated_students.csv'
+ise_fourth_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\ISE\STUDENTS\ise_fourth_year_vaccinated_students.csv'
 
-ec_first_year_vaccinated_student_database = 'ec_first_year_vaccinated_students.csv'
-ec_second_year_vaccinated_student_database = 'ec_second_year_vaccinated_students.csv'
-ec_third_year_vaccinated_student_database = 'ec_third_year_vaccinated_students.csv'
-ec_fourth_year_vaccinated_student_database = 'ec_fourth_year_vaccinated_students.csv'
+ec_first_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\EC\STUDENTS\ec_first_year_vaccinated_students.csv'
+ec_second_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\EC\STUDENTS\ec_second_year_vaccinated_students.csv'
+ec_third_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\EC\STUDENTS\ec_third_year_vaccinated_students.csv'
+ec_fourth_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\EC\STUDENTS\ec_fourth_year_vaccinated_students.csv'
 
-civil_first_year_vaccinated_student_database = 'civil_first_year_vaccinated_students.csv'
-civil_second_year_vaccinated_student_database = 'civil_second_year_vaccinated_students.csv'
-civil_third_year_vaccinated_student_database = 'civil_third_year_vaccinated_students.csv'
-civil_fourth_year_vaccinated_student_database = 'civil_fourth_year_vaccinated_students.csv'
+civil_first_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\CIVIL\STUDENTS\civil_first_year_vaccinated_students.csv'
+civil_second_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\CIVIL\STUDENTS\civil_second_year_vaccinated_students.csv'
+civil_third_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\CIVIL\STUDENTS\civil_third_year_vaccinated_students.csv'
+civil_fourth_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\CIVIL\STUDENTS\civil_fourth_year_vaccinated_students.csv'
 
-mech_first_year_vaccinated_student_database = 'mech_first_year_vaccinated_students.csv'
-mech_second_year_vaccinated_student_database = 'mech_second_year_vaccinated_students.csv'
-mech_third_year_vaccinated_student_database = 'mech_third_year_vaccinated_students.csv'
-mech_fourth_year_vaccinated_student_database = 'mech_fourth_year_vaccinated_students.csv'
+mech_first_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\MECH\STUDENTS\mech_first_year_vaccinated_students.csv'
+mech_second_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\MECH\STUDENTS\mech_second_year_vaccinated_students.csv'
+mech_third_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\MECH\STUDENTS\mech_third_year_vaccinated_students.csv'
+mech_fourth_year_vaccinated_student_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\MECH\STUDENTS\mech_fourth_year_vaccinated_students.csv'
 
-cse_vaccinated_faculty_database = 'cse_vaccinated_faculty.csv'
-ise_vaccinated_faculty_database = 'ise_vaccinated_faculty.csv'
-ec_vaccinated_faculty_database = 'ec_vaccinated_faculty.csv'
-civil_vaccinated_faculty_database = 'civil_vaccinated_faculty.csv'
-mech_vaccinated_faculty_database = 'mech_vaccinated_faculty.csv'
+cse_vaccinated_faculty_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\CSE\FACULTY\cse_vaccinated_faculty.csv'
+ise_vaccinated_faculty_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\ISE\FACULTY\ise_vaccinated_faculty.csv'
+ec_vaccinated_faculty_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\EC\FACULTY\ec_vaccinated_faculty.csv'
+civil_vaccinated_faculty_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\CIVIL\FACULTY\civil_vaccinated_faculty.csv'
+mech_vaccinated_faculty_database = 'C:\Users\K ANUSHA RAO\OneDrive\Desktop\code\Campus-Vaccination-Management-System\MECH\FACULTY\mech_vaccinated_faculty.csv'
 
 # Display Functions
 def display_menu():
