@@ -121,6 +121,7 @@ def display_menu():
     print("-----------------------------------------")
     print("1. Student")
     print("2. Faculty")
+    print("3. Quit")
 
 # Student Display Functions
 def display1_students_menu():
@@ -132,8 +133,7 @@ def display1_students_menu():
     print("3. Electronics And Communication Engineering")
     print("4. Civil Engineering")
     print("5. Mechanical Engineering")
-    print("6. Back To Previous Window")
-    print("7. Quit")
+    print("6. Quit")
 
 def display2_students_menu():
     print("-------------------------")
@@ -143,8 +143,7 @@ def display2_students_menu():
     print("2. Second Year")
     print("3. Third Year")
     print("4. Fourth Year")
-    print("5. Back To Previous Window")
-    print("6. Quit")
+    print("5. Quit")
 
 def display3_students_menu():
     print("-------------------------------------------")
@@ -154,8 +153,7 @@ def display3_students_menu():
     print("2. View Vaccinated Students Details")
     print("3. Update Vaccinated Student Details")
     print("4. Generate Unvaccinated Students File")
-    print("5. Back To Previous Window")
-    print("6. Quit")
+    print("5. Quit")
 
 # Faculty Display Functions
 def display1_faculty_menu():
@@ -167,8 +165,7 @@ def display1_faculty_menu():
     print("3. Electronics And Communication Engineering")
     print("4. Civil Engineering")
     print("5. Mechanical Engineering")
-    print("6. Back To Previous Window")
-    print("7. Quit")
+    print("6. Quit")
 
 def display2_faculty_menu():
     print("-------------------------------------------")
@@ -178,8 +175,7 @@ def display2_faculty_menu():
     print("2. View Vaccinated Faculty Details")
     print("3. Update Vaccinated Faculty Details")
     print("4. Generate Unvaccinated Faculty File")
-    print("5. Back To Previous Window")
-    print("6. Quit")
+    print("5. Quit")
 
 # CSE Student Add Functions
 def add_cse_1year_student():
@@ -2343,4 +2339,153 @@ while True:
                 elif c2==5 and c2_1==4 and c3==2:
                     view_mech_4year_student()
                 
+                # UPDATE Functions for students
+                elif c2==1 and c2_1==1 and c3==3:
+                    update_cse_1year_student()
+                elif c2==1 and c2_1==2 and c3==3:
+                    update_cse_2year_student()
+                elif c2==1 and c2_1==3 and c3==3:
+                    update_cse_3year_student()
+                elif c2==1 and c2_1==4 and c3==3:
+                    update_cse_4year_student()
+                elif c2==2 and c2_1==1 and c3==3:
+                    update_ise_1year_student()
+                elif c2==2 and c2_1==2 and c3==3:
+                    update_ise_2year_student()
+                elif c2==2 and c2_1==3 and c3==3:
+                    update_ise_3year_student()
+                elif c2==2 and c2_1==4 and c3==3:
+                    update_ise_4year_student()
+                elif c2==3 and c2_1==1 and c3==3:
+                    update_ec_1year_student()
+                elif c2==3 and c2_1==2 and c3==3:
+                    update_ec_2year_student()
+                elif c2==3 and c2_1==3 and c3==3:
+                    update_ec_3year_student()
+                elif c2==3 and c2_1==4 and c3==3:
+                    update_ec_4year_student()
+                elif c2==4 and c2_1==1 and c3==3:
+                    update_civil_1year_student()
+                elif c2==4 and c2_1==2 and c3==3:
+                    update_civil_2year_student()
+                elif c2==4 and c2_1==3 and c3==3:
+                    update_civil_3year_student()
+                elif c2==4 and c2_1==4 and c3==3:
+                    update_civil_4year_student()
+                elif c2==5 and c2_1==1 and c3==3:
+                    update_mech_1year_student()
+                elif c2==5 and c2_1==2 and c3==3:
+                    update_mech_2year_student()
+                elif c2==5 and c2_1==3 and c3==3:
+                    update_mech_3year_student()
+                elif c2==5 and c2_1==4 and c3==3:
+                    update_mech_4year_student()
+                
+                # GENERATE Functions for students
+                elif c2==1 and c2_1==1 and c3==4:
+                    generate_cse_first_year_unvaccinated_students_file()
+                elif c2==1 and c2_1==2 and c3==4:
+                    generate_cse_second_year_unvaccinated_students_file()
+                elif c2==1 and c2_1==3 and c3==4:
+                    generate_cse_third_year_unvaccinated_students_file()
+                elif c2==1 and c2_1==4 and c3==4:
+                    generate_cse_fourth_year_unvaccinated_students_file()
+                elif c2==2 and c2_1==1 and c3==4:
+                    generate_ise_first_year_unvaccinated_students_file()
+                elif c2==2 and c2_1==2 and c3==4:
+                    generate_ise_second_year_unvaccinated_students_file()
+                elif c2==2 and c2_1==3 and c3==4:
+                    generate_ise_third_year_unvaccinated_students_file()
+                elif c2==2 and c2_1==4 and c3==4:
+                    generate_ise_fourth_year_unvaccinated_students_file()
+                elif c2==3 and c2_1==1 and c3==4:
+                    generate_ec_first_year_unvaccinated_students_file()
+                elif c2==3 and c2_1==2 and c3==4:
+                    generate_ec_second_year_unvaccinated_students_file()
+                elif c2==3 and c2_1==3 and c3==4:
+                    generate_ec_third_year_unvaccinated_students_file()
+                elif c2==3 and c2_1==4 and c3==4:
+                    generate_ec_fourth_year_unvaccinated_students_file()
+                elif c2==4 and c2_1==1 and c3==4:
+                    generate_civil_first_year_unvaccinated_students_file()
+                elif c2==4 and c2_1==2 and c3==4:
+                    generate_civil_second_year_unvaccinated_students_file()
+                elif c2==4 and c2_1==3 and c3==4:
+                    generate_civil_third_year_unvaccinated_students_file()
+                elif c2==4 and c2_1==4 and c3==4:
+                    generate_civil_fourth_year_unvaccinated_students_file()
+                elif c2==5 and c2_1==1 and c3==4:
+                    generate_mech_first_year_unvaccinated_students_file()
+                elif c2==5 and c2_1==2 and c3==4:
+                    generate_mech_second_year_unvaccinated_students_file()
+                elif c2==5 and c2_1==3 and c3==4:
+                    generate_mech_third_year_unvaccinated_students_file()
+                elif c2==5 and c2_1==4 and c3==4:
+                    generate_mech_fourth_year_unvaccinated_students_file()
+                else:
+                    quit()
+            else:
+                quit()
+        else:
+            quit()
+    elif c1==2:
+        display1_faculty_menu()
+        cf2=input("Enter Your Choice: ")
+        if cf2==1 or cf2==2 or cf2==3 or cf2==4 or cf2==5:
+            display2_faculty_menu()
+            cf3=input("Enter Your Choice: ")
+
+            #ADD Functions for faculty
+            if cf2==1 and cf3==1:
+                add_cse_faculty()
+            elif cf2==2 and cf3==1:
+                add_ise_faculty()
+            elif cf2==3 and cf3==1:
+                add_ec_faculty()
+            elif cf2==4 and cf3==1:
+                add_civil_faculty()
+            elif cf2==5 and cf3==1:
+                add_mech_faculty()
+
+            #VIEW Functions for faculty    
+            elif cf2==1 and cf3==2:
+                view_cse_faculty()
+            elif cf2==2 and cf3==2:
+                view_ise_faculty()
+            elif cf2==3 and cf3==2:
+                view_ec_faculty()
+            elif cf2==4 and cf3==2:
+                view_civil_faculty()
+            elif cf2==5 and cf3==2:
+                view_mech_faculty()
+            
+            #UPDATE Functions for faculty    
+            elif cf2==1 and cf3==3:
+                update_cse_faculty()
+            elif cf2==2 and cf3==3:
+                update_ise_faculty()
+            elif cf2==3 and cf3==3:
+                update_ec_faculty()
+            elif cf2==4 and cf3==3:
+                update_civil_faculty()
+            elif cf2==5 and cf3==3:
+                update_mech_faculty()
+            
+            #Generate Functions for faculty    
+            elif cf2==1 and cf3==4:
+                generate_cse_unvaccinated_faculty_file()
+            elif cf2==2 and cf3==4:
+                generate_ise_unvaccinated_faculty_file()
+            elif cf2==3 and cf3==4:
+                generate_ec_unvaccinated_faculty_file()
+            elif cf2==4 and cf3==4:
+                generate_civil_unvaccinated_faculty_file()
+            elif cf2==5 and cf3==4:
+                generate_mech_unvaccinated_faculty_file()
+            else:
+                quit()
+        else:
+            quit()
+    else:
+        quit()   
 
