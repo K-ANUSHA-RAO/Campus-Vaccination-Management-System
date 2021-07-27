@@ -1935,3 +1935,313 @@ def update_mech_faculty():
     else:
         print("FSN Not Found In The Database.")
     input("Press Any Key To Continue.")
+
+#  Generate Function for CSE Students
+def generate_cse_first_year_unvaccinated_students_file():
+    fh=open(cse_first_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(cse_first_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(cse_first_year_student_database,'r') as in_file, open(cse_first_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_cse_second_year_unvaccinated_students_file():
+    fh=open(cse_second_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(cse_second_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(cse_second_year_student_database,'r') as in_file, open(cse_second_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_cse_third_year_unvaccinated_students_file():
+    fh=open(cse_third_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(cse_third_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(cse_third_year_student_database,'r') as in_file, open(cse_third_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_cse_fourth_year_unvaccinated_students_file():
+    fh=open(cse_fourth_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(cse_fourth_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(cse_fourth_year_student_database,'r') as in_file, open(cse_fourth_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+#  Generate Function for ISE Students
+def generate_ise_first_year_unvaccinated_students_file():
+    fh=open(ise_first_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(ise_first_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(ise_first_year_student_database,'r') as in_file, open(ise_first_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_ise_second_year_unvaccinated_students_file():
+    fh=open(ise_second_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(ise_second_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(ise_second_year_student_database,'r') as in_file, open(ise_second_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_ise_third_year_unvaccinated_students_file():
+    fh=open(ise_third_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(ise_third_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(ise_third_year_student_database,'r') as in_file, open(ise_third_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_ise_fourth_year_unvaccinated_students_file():
+    fh=open(ise_fourth_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(ise_fourth_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(ise_fourth_year_student_database,'r') as in_file, open(ise_fourth_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+#  Generate Function for EC Students
+def generate_ec_first_year_unvaccinated_students_file():
+    fh=open(ec_first_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(ec_first_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(ec_first_year_student_database,'r') as in_file, open(ec_first_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_ec_second_year_unvaccinated_students_file():
+    fh=open(ec_second_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(ec_second_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(ec_second_year_student_database,'r') as in_file, open(ec_second_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_ec_third_year_unvaccinated_students_file():
+    fh=open(ec_third_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(ec_third_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(ec_third_year_student_database,'r') as in_file, open(ec_third_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_ec_fourth_year_unvaccinated_students_file():
+    fh=open(ec_fourth_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(ec_fourth_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(ec_fourth_year_student_database,'r') as in_file, open(ec_fourth_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+#  Generate Function for CIVIL Students
+def generate_civil_first_year_unvaccinated_students_file():
+    fh=open(civil_first_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(civil_first_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(civil_first_year_student_database,'r') as in_file, open(civil_first_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_civil_second_year_unvaccinated_students_file():
+    fh=open(civil_second_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(civil_second_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(civil_second_year_student_database,'r') as in_file, open(civil_second_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_civil_third_year_unvaccinated_students_file():
+    fh=open(civil_third_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(civil_third_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(civil_third_year_student_database,'r') as in_file, open(civil_third_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_civil_fourth_year_unvaccinated_students_file():
+    fh=open(civil_fourth_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(civil_fourth_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(civil_fourth_year_student_database,'r') as in_file, open(civil_fourth_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+#  Generate Function for MECH Students
+def generate_mech_first_year_unvaccinated_students_file():
+    fh=open(mech_first_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(mech_first_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(mech_first_year_student_database,'r') as in_file, open(mech_first_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_mech_second_year_unvaccinated_students_file():
+    fh=open(mech_second_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(mech_second_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(mech_second_year_student_database,'r') as in_file, open(mech_second_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_mech_third_year_unvaccinated_students_file():
+    fh=open(mech_third_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(mech_third_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(mech_third_year_student_database,'r') as in_file, open(mech_third_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+def generate_mech_fourth_year_unvaccinated_students_file():
+    fh=open(mech_fourth_year_unvaccinated_student_database,"w+")
+    fh.close()
+    with open(mech_fourth_year_vaccinated_student_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(mech_fourth_year_student_database,'r') as in_file, open(mech_fourth_year_unvaccinated_student_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+#  Generate Function for CSE Faculty
+def generate_cse_unvaccinated_faculty_file():
+    fh=open(cse_unvaccinated_faculty_database,"w+")
+    fh.close()
+    with open(cse_vaccinated_faculty_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(cse_faculty_database,'r') as in_file, open(cse_unvaccinated_faculty_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+# Generate Function for ISE Faculty
+def generate_ise_unvaccinated_faculty_file():
+    fh=open(ise_unvaccinated_faculty_database,"w+")
+    fh.close()
+    with open(ise_vaccinated_faculty_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(ise_faculty_database,'r') as in_file, open(ise_unvaccinated_faculty_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+# Generate Function for EC Faculty
+def generate_ec_unvaccinated_faculty_file():
+    fh=open(ec_unvaccinated_faculty_database,"w+")
+    fh.close()
+    with open(ec_vaccinated_faculty_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(ec_faculty_database,'r') as in_file, open(ec_unvaccinated_faculty_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+# Generate Function for CIVIL Faculty
+def generate_civil_unvaccinated_faculty_file():
+    fh=open(civil_unvaccinated_faculty_database,"w+")
+    fh.close()
+    with open(civil_vaccinated_faculty_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(civil_faculty_database,'r') as in_file, open(civil_unvaccinated_faculty_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
+
+# Generate Function for MECH Faculty
+def generate_mech_unvaccinated_faculty_file():
+    fh=open(mech_unvaccinated_faculty_database,"w+")
+    fh.close()
+    with open(mech_vaccinated_faculty_database) as check_file:
+        check_set=set([row.split(',')[0].strip().upper()] for row in check_file)
+    with open(mech_faculty_database,'r') as in_file, open(mech_unvaccinated_faculty_database,'w') as out_file:
+        for line in in_file:
+            if line.split(',')[0].strip().upper() not in check_set:
+                out_file.write(line)
+    print("The Unvaccinated File Is Generated Successfully!")
+    input("Press Any Key To continue.")
