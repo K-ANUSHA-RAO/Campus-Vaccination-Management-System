@@ -5,7 +5,7 @@ Fields :- ['FID', 'Name', 'Age', 'Phone', 'Vaccine_Dose']
 1. Add Vaccinated Student/Faculty Details
 2. View Vaccinated Students/Faculty Details
 3. Update Vaccinated Student/Faculty Details
-4. Generate Non vaccinated Students/Faculty File
+4. Generate Unvaccinated Students/Faculty File
 5. Back To Previous Window
 6. Quit
 """ 
@@ -153,7 +153,7 @@ def display3_students_menu():
     print("1. Add Vaccinated Student Details")
     print("2. View Vaccinated Students Details")
     print("3. Update Vaccinated Student Details")
-    print("4. Generate Non Vaccinated Students File")
+    print("4. Generate Unvaccinated Students File")
     print("5. Back To Previous Window")
     print("6. Quit")
 
@@ -177,7 +177,7 @@ def display2_faculty_menu():
     print("1. Add Vaccinated Faculty Details")
     print("2. View Vaccinated Faculty Details")
     print("3. Update Vaccinated Faculty Details")
-    print("4. Generate Non Vaccinated Faculty File")
+    print("4. Generate Unvaccinated Faculty File")
     print("5. Back To Previous Window")
     print("6. Quit")
 
@@ -1756,4 +1756,182 @@ def update_mech_4year_student():
         print("USN Not Found In The Database.")
     input("Press Any Key To Continue.")
 
-# Generate Function For CSE Students
+#  CSE Faculty Update Function
+def update_cse_faculty():
+    print("------------------")
+    print("Update Faculty")
+    print("------------------")
+    global faculty_fields
+    global cse_vaccinated_faculty_database
+    FSN=input("Enter FSN To Update: ")
+    index_faculty=None
+    updated_data=[]
+    with open(cse_vaccinated_faculty_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if FSN==row[0] :
+                    index_faculty=counter
+                    print("Faculty Found: At Index ",index_faculty)
+                    faculty_data=[]
+                    for field in faculty_fields:
+                        value=input("Enter "+field+": ")
+                        faculty_data.append(value)
+                    updated_data.append(faculty_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_faculty is not None:
+        with open(cse_vaccinated_faculty_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("FSN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+#  ISE Faculty Update Function
+def update_ise_faculty():
+    print("------------------")
+    print("Update Faculty")
+    print("------------------")
+    global faculty_fields
+    global ise_vaccinated_faculty_database
+    FSN=input("Enter FSN To Update: ")
+    index_faculty=None
+    updated_data=[]
+    with open(ise_vaccinated_faculty_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if FSN==row[0] :
+                    index_faculty=counter
+                    print("Faculty Found: At Index ",index_faculty)
+                    faculty_data=[]
+                    for field in faculty_fields:
+                        value=input("Enter "+field+": ")
+                        faculty_data.append(value)
+                    updated_data.append(faculty_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_faculty is not None:
+        with open(ise_vaccinated_faculty_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("FSN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+#  EC Faculty Update Function
+def update_ec_faculty():
+    print("------------------")
+    print("Update Faculty")
+    print("------------------")
+    global faculty_fields
+    global ec_vaccinated_faculty_database
+    FSN=input("Enter FSN To Update: ")
+    index_faculty=None
+    updated_data=[]
+    with open(ec_vaccinated_faculty_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if FSN==row[0] :
+                    index_faculty=counter
+                    print("Faculty Found: At Index ",index_faculty)
+                    faculty_data=[]
+                    for field in faculty_fields:
+                        value=input("Enter "+field+": ")
+                        faculty_data.append(value)
+                    updated_data.append(faculty_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_faculty is not None:
+        with open(ec_vaccinated_faculty_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("FSN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+#  CIVIL Faculty Update Function
+def update_civil_faculty():
+    print("------------------")
+    print("Update Faculty")
+    print("------------------")
+    global faculty_fields
+    global civil_vaccinated_faculty_database
+    FSN=input("Enter FSN To Update: ")
+    index_faculty=None
+    updated_data=[]
+    with open(civil_vaccinated_faculty_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if FSN==row[0] :
+                    index_faculty=counter
+                    print("Faculty Found: At Index ",index_faculty)
+                    faculty_data=[]
+                    for field in faculty_fields:
+                        value=input("Enter "+field+": ")
+                        faculty_data.append(value)
+                    updated_data.append(faculty_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_faculty is not None:
+        with open(civil_vaccinated_faculty_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("FSN Not Found In The Database.")
+    input("Press Any Key To Continue.")
+
+#  MECH Faculty Update Function
+def update_mech_faculty():
+    print("------------------")
+    print("Update Faculty")
+    print("------------------")
+    global faculty_fields
+    global mech_vaccinated_faculty_database
+    FSN=input("Enter FSN To Update: ")
+    index_faculty=None
+    updated_data=[]
+    with open(mech_vaccinated_faculty_database,"r",encoding="utf-8") as f:
+        reader=csv.reader(f)
+        counter=0
+        for row in reader:
+            if len(row)>0 :
+                if FSN==row[0] :
+                    index_faculty=counter
+                    print("Faculty Found: At Index ",index_faculty)
+                    faculty_data=[]
+                    for field in faculty_fields:
+                        value=input("Enter "+field+": ")
+                        faculty_data.append(value)
+                    updated_data.append(faculty_data)
+                else:
+                    updated_data.append(row)
+                counter=counter+1
+    
+    # To Check If Record Is Found Or Not
+    if index_faculty is not None:
+        with open(mech_vaccinated_faculty_database,"w",encoding="utf-8") as f:
+            writer=csv.writer(f)
+            writer.writerows(updated_data)
+    else:
+        print("FSN Not Found In The Database.")
+    input("Press Any Key To Continue.")
