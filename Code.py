@@ -2245,3 +2245,102 @@ def generate_mech_unvaccinated_faculty_file():
                 out_file.write(line)
     print("The Unvaccinated File Is Generated Successfully!")
     input("Press Any Key To continue.")
+
+while True:
+    display_menu()
+    c1=input("Enter Your Choice: ")
+    if c1==1:
+        display1_students_menu()
+        c2=input("Enter Your Choice: ")
+        if c2==1 or c2==2 or c2==3 or c2==4 or c2==5:
+            display2_students_menu()
+            c2_1=input("Enter Your Choice: ")
+            if c2_1==1 or c2_1==2 or c2_1==3 or c2_1==4:
+                display3_students_menu()
+                c3=input("Enter Your Choice: ")
+
+                # ADD Function For Students
+                if c2==1 and c2_1==1 and c3==1:
+                    add_cse_1year_student()
+                elif c2==1 and c2_1==2 and c3==1:
+                    add_cse_2year_student()
+                elif c2==1 and c2_1==3 and c3==1:
+                    add_cse_3year_student()
+                elif c2==1 and c2_1==4 and c3==1:
+                    add_cse_4year_student()
+                elif c2==2 and c2_1==1 and c3==1:
+                    add_ise_1year_student()
+                elif c2==2 and c2_1==2 and c3==1:
+                    add_ise_2year_student()
+                elif c2==2 and c2_1==3 and c3==1:
+                    add_ise_3year_student()
+                elif c2==2 and c2_1==4 and c3==1:
+                    add_ise_4year_student()
+                elif c2==3 and c2_1==1 and c3==1:
+                    add_ec_1year_student()
+                elif c2==3 and c2_1==2 and c3==1:
+                    add_ec_2year_student()
+                elif c2==3 and c2_1==3 and c3==1:
+                    add_ec_3year_student()
+                elif c2==3 and c2_1==4 and c3==1:
+                    add_ec_4year_student()
+                elif c2==4 and c2_1==1 and c3==1:
+                    add_civil_1year_student()
+                elif c2==4 and c2_1==2 and c3==1:
+                    add_civil_2year_student()
+                elif c2==4 and c2_1==3 and c3==1:
+                    add_civil_3year_student()
+                elif c2==4 and c2_1==4 and c3==1:
+                    add_civil_4year_student()
+                elif c2==5 and c2_1==1 and c3==1:
+                    add_mech_1year_student()
+                elif c2==5 and c2_1==2 and c3==1:
+                    add_mech_2year_student()
+                elif c2==5 and c2_1==3 and c3==1:
+                    add_mech_3year_student()
+                elif c2==5 and c2_1==4 and c3==1:
+                    add_mech_4year_student()
+                
+                # VIEW Functions for students
+                elif c2==1 and c2_1==1 and c3==2:
+                    view_cse_1year_student()
+                elif c2==1 and c2_1==2 and c3==2:
+                    view_cse_2year_student()
+                elif c2==1 and c2_1==3 and c3==2:
+                    view_cse_3year_student()
+                elif c2==1 and c2_1==4 and c3==2:
+                    view_cse_4year_student()
+                elif c2==2 and c2_1==1 and c3==2:
+                    view_ise_1year_student()
+                elif c2==2 and c2_1==2 and c3==2:
+                    view_ise_2year_student()
+                elif c2==2 and c2_1==3 and c3==2:
+                    view_ise_3year_student()
+                elif c2==2 and c2_1==4 and c3==2:
+                    view_ise_4year_student()
+                elif c2==3 and c2_1==1 and c3==2:
+                    view_ec_1year_student()
+                elif c2==3 and c2_1==2 and c3==2:
+                    view_ec_2year_student()
+                elif c2==3 and c2_1==3 and c3==2:
+                    view_ec_3year_student()
+                elif c2==3 and c2_1==4 and c3==2:
+                    view_ec_4year_student()
+                elif c2==4 and c2_1==1 and c3==2:
+                    view_civil_1year_student()
+                elif c2==4 and c2_1==2 and c3==2:
+                    view_civil_2year_student()
+                elif c2==4 and c2_1==3 and c3==2:
+                    view_civil_3year_student()
+                elif c2==4 and c2_1==4 and c3==2:
+                    view_civil_4year_student()
+                elif c2==5 and c2_1==1 and c3==2:
+                    view_mech_1year_student()
+                elif c2==5 and c2_1==2 and c3==2:
+                    view_mech_2year_student()
+                elif c2==5 and c2_1==3 and c3==2:
+                    view_mech_3year_student()
+                elif c2==5 and c2_1==4 and c3==2:
+                    view_mech_4year_student()
+                
+
