@@ -15,7 +15,7 @@ The details of faculties who are vaccinated and not vaccinated can be viewed.
 ## To Do List
 - [ ] Create CSV Files for Student Database.
 - [ ] Create CSV Files for Faculty Database.
-- [ ] Create Add Vacinated Student Details Function In Code.py
+- [x] Create Add Vacinated Student Details Function In Code.py
 - [ ] Create View Vaccinated Student Details Function In Code.py
 - [ ] Create Update Vaccinated Student Details Function In Code.py
 - [ ] Create A Function To Generate Non Vaccinated Students File By Compairing Student Database File And Vaccinated Students File.
